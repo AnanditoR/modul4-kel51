@@ -26,3 +26,5 @@ while stop == False:
     s=input("\nApakah anda ingin mengulang?(Y/T)")
     if (s=='t'):
         stop=True
+    elif (s=='y'):
+        stop=False
