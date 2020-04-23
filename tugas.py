@@ -33,7 +33,8 @@ def balok():
     p = float(input("masukkan panjang: "))
     l = float(input ("masukkan lebar: "))
     t = float(input ("masukkan tinggi: "))
-    
+    while (pil <1 or pil>2):
+        pil=int (input('masukan tidak tersedia\nsilahkan masukan kembali pilihan anda: '))
     if (pil==1):
         a.volbalok(p,l,t)
     elif (pil==2):
@@ -43,6 +44,8 @@ def kerucut():
     pil = int(input('\n1. Hitung Volume\n2. Hitung Luas Permukaan\nPilihan: '))
     r = float(input("masukkan jari-jari: "))
     t = float(input ("masukkan tinggi: "))
+    while (pil <1 or pil>2):
+        pil=int (input('masukan tidak tersedia\nsilahkan masukan kembali pilihan anda: '))
     if (pil==1):
         print('volumenya sebesar ',a.volkerucut(r,t))
     elif (pil==2):
@@ -53,6 +56,8 @@ def tabung():
     pil = int(input('\n1. Hitung Volume\n2. Hitung Luas permukaan\nPilihan: '))
     r = float(input("masukkan jari-jari: "))
     t = float(input ("masukkan tinggi: "))
+    while (pil <1 or pil>2):
+        pil=int (input('masukan tidak tersedia\nsilahkan masukan kembali pilihan anda: '))    
     if (pil==1):
         a.voltabung(r,t)
     elif (pil==2):
@@ -61,6 +66,8 @@ def tabung():
 def bola():
     pil = int(input('\n1. Hitung Volume\n2. Hitung Luas Permukaan\nPilihan: '))
     r = float(input("masukkan jari-jari: "))
+    while (pil <1 or pil>2):
+        pil=int (input('masukan tidak tersedia\nsilahkan masukan kembali pilihan anda: '))    
     if (pil==1):
         print('volumenya adalah', a.volbola(r))
     elif (pil==2):
